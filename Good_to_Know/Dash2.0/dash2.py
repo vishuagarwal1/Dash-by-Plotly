@@ -25,11 +25,9 @@ app.layout = dbc.Container([
         dbc.Col([mytitle], width=6)
     ], justify='center'),
     dbc.Row([
-        dbc.Col([mygraph], width=12)
+        dbc.Col([mygraph], width=6),
+        dbc.Col([dropdown], width=6, align = 'cen')
     ]),
-    dbc.Row([
-        dbc.Col([dropdown], width=6)
-    ], justify='center'),
 
 ], fluid=True)
 

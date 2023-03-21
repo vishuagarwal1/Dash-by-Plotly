@@ -3,6 +3,9 @@ from dash import html, dcc
 
 app = dash.Dash(__name__, use_pages=True)
 
+for page in dash.page_registry.values():
+    print(page)
+
 app.layout = html.Div(
     [
         # main app framework
